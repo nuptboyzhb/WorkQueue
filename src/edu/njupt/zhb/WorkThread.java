@@ -16,7 +16,7 @@ public class WorkThread extends Thread {
 	public static int number = 0;
 
 	@Override
-	public void run() {
+	public synchronized void run() {
 		// TODO Auto-generated method stub
 		number++;
 		try {
